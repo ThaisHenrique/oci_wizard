@@ -1,8 +1,8 @@
 import oci
 
-# Check the documentation to sse how to create a config file for authentication
+# Check the documentation to se how to create a config file for authentication
 # https://docs.oracle.com/en-us/iaas/tools/python/2.125.2/configuration.html
-config = oci.config.from_file("path_to_conifg_file")
+config = oci.config.from_file("path_to_config_file")
 data_integration_client = oci.data_integration.DataIntegrationClient(config)
 
 workspace_id = "ocid1.disworkspace........" # OCID do Workspace
@@ -27,7 +27,7 @@ applications_dict = list_di_objects(data_integration_client.list_dis_application
 data_flows_dict = list_di_objects(data_integration_client.list_data_flows, workspace_id=workspace_id)
 tasks_dict = list_di_objects(data_integration_client.list_tasks, workspace_id=workspace_id)
 
-# Print the results form the dict above
+# Print the results from the dict above
 print_objects_dict(projects_dict, "Projects")
 print_objects_dict(assets_dict, "Data Assets")
 print_objects_dict(applications_dict, "DIS Applications")

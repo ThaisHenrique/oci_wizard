@@ -22,7 +22,7 @@ import pytz
 timezone = pytz.timezone('America/Sao_Paulo')
 timestamp = datetime.now(timezone).strftime("%d%m%Y_%H%M%S")
 
-file_name_now = f"file_name_{timestamp}"
+file_name_now = f"file_name_{timestamp}.workspace.zip"
 
 # Authentication
 config = oci.config.from_file("path_to_config_file")
