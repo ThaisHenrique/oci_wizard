@@ -3,7 +3,7 @@ Project Name: Full Export OCI Data Integration
 Author: Thais Henrique
 Contact: thaishenrique3110@gmail.com
 Creation Date: 09/04/2024
-Last Modification: 09/04/2024
+Last Modification: 17/04/2024
 Version: 1.0
 Oracle Cloud Infrastructure Python SDK - 2.125.1
 Description: This file contains an example of how to create a full export of the objects of OCI Data Integration.
@@ -22,6 +22,7 @@ import pytz
 timezone = pytz.timezone('America/Sao_Paulo')
 timestamp = datetime.now(timezone).strftime("%d%m%Y_%H%M%S")
 
+# It is required to use the .workspace.zip in the file name for full exports of the workspace
 file_name_now = f"file_name_{timestamp}.workspace.zip"
 
 # Authentication

@@ -1,3 +1,15 @@
+"""
+Project Name: List display name and key from the objects of OCI Data Integration
+Author: Thais Henrique
+Contact: thaishenrique3110@gmail.com
+Creation Date: 09/04/2024
+Last Modification: 17/04/2024
+Version: 1.0
+Oracle Cloud Infrastructure Python SDK - 2.125.1
+Description: This file contains an example of how to list display name and key from the objects of OCI Data Integration.
+Make sure to change all the variables like your OCID and object names, all the value below are examples only.
+"""
+
 import oci
 
 # Check the documentation to se how to create a config file for authentication
@@ -33,3 +45,5 @@ print_objects_dict(assets_dict, "Data Assets")
 print_objects_dict(applications_dict, "DIS Applications")
 print_objects_dict(data_flows_dict, "Data Flows")
 print_objects_dict(tasks_dict, "Tasks")
+
+# Have fun customizing and improving this code for your need 😎💻.
